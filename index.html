@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css " integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a href="" class="logo">Web<span class="header-logo">Sutdio</span></a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -20,42 +20,48 @@
                 </ul>
             </nav>
             <ul class="contact-list">
-                <li class="contact-list-item"><a href="" class="contact-list-link">info@devstudio.com</a></li>
-                <li class="contact-list-item"><a href="" class="contact-list-link">+38 096 111 11 11</a></li>
+                <li class="contact-list-item"><a href="" class="contact-list-link"><svg width="16" height="12">
+                    <use href="./symbol-defs.svg#icon-envelope"></use>
+                </svg> info@devstudio.com</a></li>
+                <li class="contact-list-item"><a href="" class="contact-list-link"><svg width="10" height="16">
+                    <use href="./symbol-defs.svg#icon-tel"></use>
+                </svg>+38 096 111 11 11</a></li>
             </ul>
             
             
         </div>
     </header>
     <section class="hero">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <div class="container">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="hero-btn" type="button">Замовити послугу</button>
+        </div>
     </section>
     <section class="features">
-        <div>
-            <ul>
-                <li>
-                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Ідейні міркування і навіть початок
+        <div class="container">
+            <ul class="feature-list">
+                <li class="feature-list-item">
+                    <h3 class="feature-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="feature-list-text">Ідейні міркування і навіть початок
                         повсякденної поботи з формування
                         позиції.
                     </p>
                 </li>
-                <li>
-                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                <li class="feature-list-item">
+                    <h3 class="feature-list-title">ПУНКТУАЛЬНІСТЬ</h3>
                     <p>Завдання організації, особливо рамки 
                         і місце навчання кадрів тягне у себе.
                     </p>
                 </li>
-                <li>
-                    <h3>ПЛАНУВАННЯ</h3>
+                <li class="feature-list-item">
+                    <h3 class="feature-list-title">ПЛАНУВАННЯ</h3>
                     <p>Так само консультація з широким 
                         активом значною мірою зумовлює.
                     </p>
                 </li>
-                <li>
-                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>
+                <li class="feature-list-item">
+                    <h3 class="feature-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="feature-list-title">
                         Значимість цих проблем настільки
                         очевидна, що реалізація планових завдань.
                     </p>
@@ -64,42 +70,213 @@
         </div>
     </section>
     <section class="work">
-        <div>
-            <h2>Чим ми займаємося</h2>
-            <ul>
-                <li><img src="./images/0001.png" alt=""></li>
-                <li><img src="./images/0002.png" alt=""></li>
-                <li><img src="./images/0003.png" alt=""></li>
+        <div class="container">
+            <h2 class="work-title">Чим ми займаємося</h2>
+            <ul class="work-list">
+                <li class="work-list-item"><img src="./images/box 1.jpg" alt=""></li>
+                <li class="work-list-item"><img src="./images/box 2.png" alt=""></li>
+                <li class="work-list-item"><img src="./images/box 3.png" alt=""></li>
             </ul>
         </div>
     </section>
     <section class="team"> 
-        <div>
-            <h2>Наша Команда</h2>
-            <div>
-                <img src="./images/Igor.png" alt="Igor">
-                <h3>Ігор Дем*яненко</h3>
-                <p>Product Designer</p>
-            </div>
-            <div>
-                <img src="./images/Olga.png" alt="Olga">
-                <h3>Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>
-            </div>
-            <div>
-                <img src="./images/Mykola.png" alt="Mykola">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>
-            </div>
-            <div>
-                <img src="./images/Myhaylo.png" alt="Myhaylo">
-                <h3>Михайло Єрмаков</h3>
-                <p>UI Designer</p>
-            </div>
+        <div class="container">
+            <h2 class="team-title">Наша Команда</h2>
+            <ul>
+                <li>
+                    <img src="./images/Igor.jpg" alt="Igor">
+                    <h3 class="">Ігор Дем*яненко</h3>
+                    <p>Product Designer</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="./images/Olga.jpg" alt="Olga">
+                    <h3>Ольга Рєпіна</h3>
+                    <p>Frontend Developer</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="./images/Mykola.jpg" alt="Mykola">
+                    <h3>Микола Тарасов</h3>
+                    <p>Marketing</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="./images/Myhaylo.jpg" alt="Myhaylo">
+                    <h3>Михайло Єрмаков</h3>
+                    <p>UI Designer</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </section>
-    <footer>
-        <div>
+    <section class="clients">
+        <div class="container">
+            <h2 class="clients-title">Постійні клієнти</h2>
+            <ul class="clients-list">
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group-3"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group-4"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-list-item">
+                    <a class="clients-list-link" href="">
+                        <svg width="106" height="60">
+                            <use href="./symbol-defs.svg#icon-group-5"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
             <a href="" class="logo">Web<span class="footer-logo">Sutdio</span></a>
             <address class="address">
             <ul class="address-list">
@@ -108,6 +285,37 @@
             <li class="address-list-item"><a href="" class="address-list-link">+38 096 111 11 11</a></li>
             </ul>
             </address>
+            <p>Приєднуйтесь</p>
+            <ul>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
