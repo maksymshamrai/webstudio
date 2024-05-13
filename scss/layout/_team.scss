@@ -1,0 +1,11 @@
+.team {
+    &-team-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &-team-list {
+        display: flex;
+        justify-content: center;
+    }
+}
