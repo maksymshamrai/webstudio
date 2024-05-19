@@ -314,3 +314,24 @@
     gap: 30px;
     padding: 94px 0;
 }
+.portfolio-list-item {
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+}
+.portfolio-list-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+.portfolio-list-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
